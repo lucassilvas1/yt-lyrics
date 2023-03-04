@@ -63,7 +63,6 @@
     abortController = new AbortController();
     try {
       oldTitle = await getNewTitle(abortController.signal);
-      console.log(oldTitle);
       symbol = Symbol();
       loaded = true;
     } catch (error) {
