@@ -67,8 +67,7 @@
       symbol = Symbol();
       loaded = true;
     } catch (error) {
-      // if (error.name !== "AbortError") console.error(error);
-      console.error(error);
+      if (error.name !== "AbortError") console.error(error);
     }
   }
 
