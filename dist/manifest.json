@@ -1,0 +1,36 @@
+{
+  "name": "Youtube Lyrics",
+  "version": "0.2.16",
+  "description": "Get lyrics for any music video on YouTube.",
+  "manifest_version": 3,
+  "minimum_chrome_version": "93",
+  "icons": {
+    "16": "img/icon_16.png",
+    "32": "img/icon_32.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["global.css", "content.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://*.youtube.com/",
+    "https://open.spotify.com/get_access_token",
+    "https://spclient.wg.spotify.com/",
+    "https://api-partner.spotify.com/"
+  ],
+  "permissions": ["storage"],
+  "web_accessible_resources": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "resources": ["fonts/*"]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "module": "ESNext" /* Specify what module code is generated. */,
+    "sourceMap": true /* Create source map files for emitted JavaScript files. */,
+    // "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    "strictNullChecks": true /* When type checking, take into account 'null' and 'undefined'. */,
+    "useUnknownInCatchVariables": false /* Default catch clause variables as 'unknown' instead of 'any'. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "moduleResolution": "node"
+  },
+  "exclude": ["./node_modules"]
+}

@@ -1,0 +1,7 @@
+/assets
+dist/*
+!dist/fonts
+!dist/img
+!dist/global.css
+!dist/manifest.json
+/node_modules
