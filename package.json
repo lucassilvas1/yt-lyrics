@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "bundle": "webpack",
-    "build": "set mode=development&&rollup -c&&webpack",
+    "build": "set NODE_ENV=development&&rollup -c&&webpack --mode development",
     "dist": "rollup -c && webpack"
   },
   "keywords": [],

@@ -6,7 +6,7 @@ import css from "rollup-plugin-css-only";
 import autoPreprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
 
-const dev = process.env.mode === "development";
+const dev = process.env.NODE_ENV === "development";
 
 export default {
   input: "src/content/main.js",
