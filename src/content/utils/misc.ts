@@ -69,6 +69,10 @@ export function intToRGBA(num: number) {
   return "rgba(" + [r, g, b, a].join(",") + ")";
 }
 
+/**
+ * Removes everything between parenthesis and square brackets for better results, also removes `"` since that
+ * breaks Spotify search for some reason
+ */
 export function sanitizeTitle(title: string) {
   return title
     .replace(/(?=[\[(]).*(?:[)\]])/g, "")
