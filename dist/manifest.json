@@ -1,6 +1,6 @@
 {
-  "name": "Youtube Lyrics",
-  "version": "0.2.16",
+  "name": "YouTube Lyrics",
+  "version": "0.2.17",
   "description": "Get lyrics for any music video on YouTube.",
   "manifest_version": 3,
   "minimum_chrome_version": "93",
