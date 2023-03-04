@@ -79,6 +79,14 @@
     },
     true
   );
+
+  window.addEventListener(
+    "popstate",
+    () => {
+      oldTitle = "";
+    },
+    true
+  );
 </script>
 
 {#if loaded}
