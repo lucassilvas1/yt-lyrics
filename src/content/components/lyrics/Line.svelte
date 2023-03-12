@@ -50,6 +50,7 @@
   div {
     cursor: default;
     transition: color 0.2s ease-out;
+    --shadow: #000 0 0 2px;
   }
 
   .synced {
@@ -58,10 +59,12 @@
 
   .passed {
     color: var(--lyrics-color-passed);
+    text-shadow: var(--shadow);
   }
 
   .active,
   div:hover {
+    text-shadow: var(--shadow);
     color: var(--lyrics-color-active);
   }
 </style>

@@ -1,6 +1,6 @@
 .yt-lyrics-outer-wrapper {
   --yt-red: #fd0000;
-  --default-bg-color: rgb(15, 15, 15);
+  --default-bg-color: rgba(15, 15, 15, 0.6);
   --main-bg-color: var(--default-bg-color);
   --pill-bg-color: rgb(25, 25, 25);
   --main-text-color: #fff;

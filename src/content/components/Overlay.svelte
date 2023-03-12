@@ -33,6 +33,7 @@
   import Search from "./search/Search.svelte";
   import { Track } from "../../types/tracksResponse";
   import { Unsubscriber } from "svelte/store";
+  import { OPACITY } from "../const";
 
   export let title: string;
 
@@ -66,7 +67,10 @@
 
   function setLyricsColors() {
     if ("error" in lyricsObj) setBackgroundColor("var(--not-found-bg-color)");
-    else setBackgroundColor(intToRGBA(lyricsObj.lyrics.colors.background));
+    else
+      setBackgroundColor(
+        intToRGBA(lyricsObj.lyrics.colors.background, OPACITY)
+      );
   }
 
   async function loadLyrics(track?: Track) {
