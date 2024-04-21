@@ -1,6 +1,6 @@
 .yt-lyrics-outer-wrapper {
   --yt-red: #fd0000;
-  --default-bg-color: rgba(15, 15, 15, 0.6);
+  --default-bg-color: rgb(15, 15, 15);
   --main-bg-color: var(--default-bg-color);
   --pill-bg-color: rgb(25, 25, 25);
   --main-text-color: #fff;
@@ -20,16 +20,21 @@
   font-style: normal;
 }
 
+.yt-lyrics-outer-wrapper {
+  color: var(--main-text-color);
+  position: fixed;
+  z-index: 9999999;
+}
+
+.yt-lyrics-outer-wrapper input {
+  color: var(--main-text-color);
+}
+
 .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
   fill: var(--secondary-text-color);
-}
-
-.yt-lyrics-outer-wrapper {
-  position: fixed;
-  z-index: 9999999;
 }
 
 .yt-lyrics-outer-wrapper button {

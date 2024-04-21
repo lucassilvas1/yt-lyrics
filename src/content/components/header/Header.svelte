@@ -80,7 +80,7 @@
     width: 100%;
     height: 32px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   header:active {

@@ -80,6 +80,10 @@
     white-space: nowrap;
   }
 
+  .track-name {
+    color: #cccccc;
+  }
+
   .track-artists {
     color: #b3b3b3;
     font-size: 12px;
