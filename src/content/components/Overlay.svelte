@@ -166,7 +166,7 @@
   }
 
   onDestroy(() => {
-    unsub();
+    unsub?.();
     video?.removeEventListener("playing", onPlay);
     video?.removeEventListener("pause", onPause);
     video?.removeEventListener("ended", onPause);

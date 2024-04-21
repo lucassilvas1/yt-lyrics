@@ -1,6 +1,6 @@
 {
   "name": "YouTube Lyrics",
-  "version": "0.3.0",
+  "version": "0.3.3",
   "description": "Get lyrics for any music video on YouTube.",
   "manifest_version": 3,
   "minimum_chrome_version": "93",
@@ -17,7 +17,8 @@
     {
       "matches": ["https://*.youtube.com/*"],
       "js": ["content.js"],
-      "css": ["global.css", "content.css"]
+      "css": ["global.css", "content.css"],
+      "run_at": "document_start"
     }
   ],
   "host_permissions": [
@@ -30,7 +31,7 @@
   "web_accessible_resources": [
     {
       "matches": ["https://*.youtube.com/*"],
-      "resources": ["fonts/*"]
+      "resources": ["fonts/*", "get-video-info.js"]
     }
   ]
 }
